@@ -1,0 +1,8 @@
+﻿@using Drug.Models;
+<ul >
+    @foreach(var el in ViewData["drugs"] as List<cDrug>)
+            {
+                <li>@el.name @el.price</li>
+            }
+</ul>   
+

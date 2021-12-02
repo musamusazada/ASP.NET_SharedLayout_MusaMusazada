@@ -1,0 +1,8 @@
+﻿@using Drug.Models;
+<ul class="d-flex flex-column justify-content-center">
+    @foreach (var el in ViewData["drugTypes"] as List<DrugTypes>)
+    {
+        <li>@el.name </li>
+    }
+</ul>
+
